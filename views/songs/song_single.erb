@@ -1,0 +1,19 @@
+<section class="songs songs--single">
+	<h1>Song: <%= song.title %></h1>
+	
+		<figure class="song">
+			<iframe src="https://embed.spotify.com/?uri=<%= song.spotify_url %>" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+			<figcaption>
+				<p class="song__title"><a href="/songs/<%= song.id %>" rel="bookmark"><%= song.artist %>: <%= song.title %></a></p>
+				<p>
+					<span class="song__label">Album: </span><%= song.album %><br>
+					<span class="song__label">Released: </span><%= song.release_year %>
+				</p>
+				<div class="song__likes"><span class="song__label">Likes: </span> <%= song.likes %> <a class="btn" href="/songs/like/<%= song.id %>">Like</a></div>
+			</figcaption>
+			<p><a href="/songs/edit/<%= song.id %>">Edit song</a></p>
+			<p><a href="/songs/delete/<%= song.id %>">Delete song</a></p>
+		</figure>
+
+	<a href="/songs/">&lt;- Back to songs</a>
+</section>

@@ -1,0 +1,34 @@
+<section class="songs songs--add">
+	<h1>Add song</h1>
+	<form method="post" action="/songs/new">
+
+		<label for="song_title">
+			Title
+			<input type="text" name="song_title" placeholder="Title">
+		</label>
+		
+		<label for="song_artist">
+			Artist
+			<input type="text" name="song_artist" placeholder="Artist">	
+		</label>
+		
+		<label for="song_album">
+			Album
+			<input type="text" name="song_album" placeholder="Album">	
+		</label>
+		
+		<label for="song_release_year">
+			Release Year
+			<input type="text" name="song_release_year" placeholder="Release Year">	
+		</label>
+		
+		<label for="song_spotify_url">
+			Spotify URL
+			<input type="text" name="song_spotify_url" placeholder="Spotify URL">
+		</label>
+		
+		<input type="submit">
+		
+	</form>
+	<p><a href="/songs">Back to songs</a></p>
+</section>

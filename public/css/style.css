@@ -1,0 +1,155 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+*,
+*::before,
+*::after {
+	box-sizing:border-box;
+}
+
+html, body {
+	height:100%;
+}
+
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Source Sans Pro', Verdana, sans-serif
+}
+
+a {
+	text-decoration:none;
+	color:#139DFF;
+}
+
+section {
+	margin:2em auto;
+}
+
+form {
+	position:relative;
+	width:50%;
+	max-width:20em;
+	margin:0 auto;
+	padding:1em;
+	background-color:rgba(255,255,255,0.8);
+}
+
+input {
+	display:block;
+	padding:0.5em 1em;
+	width:100%;
+	clear:both;
+}
+
+label {
+	display:block;
+	width:100%;
+	margin-bottom:1em;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0px 0px -5.25em 0px;
+	background-image:linear-gradient(to bottom, rgba(0,0,0,0.125), rgba(0,0,0,0.25)), url('../images/background/background.jpg');
+	background-size:cover;
+	background-repeat:no-repeat; 
+	background-position:center center;
+}
+
+.content-wrapper {
+	margin:0 auto;
+	width:90%;
+	min-width:320px;
+	max-width:960px;
+	padding:3em 0 5.25em 0;
+}
+
+.site-header {
+	padding:2em;
+}
+
+.site-title {
+	float:left;
+	margin-top:0.25em;
+	color:white;
+}
+
+.site-title a {
+	color:white;
+}
+
+.site-nav ul {
+	margin:1em 0 0 0;
+	padding:0;
+	list-style-type:none;
+	float:right;
+}
+
+.site-nav__item {
+	display:block;
+	float:left;
+	margin-left:1em;
+}
+
+.site-nav__item a {
+	color:white;
+}
+
+.site-footer {
+	padding:1em 2em;
+	color:white;
+}
+
+.song {
+	padding:5px;
+	margin:5px;
+	background-color:rgba(255,255,255,0.8);
+}
+
+.song__list li {
+	display:block;
+	float:left;
+	max-width:320px;
+}
+
+.song__list {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+
+.song h2 {
+	display:inline;
+	font-size:1em;
+}
+
+.song h2 * {
+	word-wrap:break-word;
+}
+
+.song p {
+	margin:0;
+}
+
+.song .song__title {
+	color:#139DFF;
+	height:2em;
+	margin-bottom:1em;
+	font-weight: 700;
+	word-wrap:break-word;
+}

@@ -1,0 +1,37 @@
+<section class="songs songs--edit">
+	<h1>Edit song</h1>
+	<form method="post" action="/songs/edit">
+
+		<label for="song_title">
+			Title
+			<input type="text" name="song_title" id="song_title" value="<%= song.title %>">	
+		</label>
+		
+		<label for="song_artist">
+			Artist
+			<input type="text" name="song_artist" id="song_artist" value="<%= song.artist %>">	
+		</label>
+		
+		<label for="song_album">
+			Album
+			<input type="text" name="song_album" id="song_album" value="<%= song.album %>">	
+		</label>
+		
+		<label for="song_release_year">
+			Release Year
+			<input type="text" name="song_release_year" id="song_release_year" value="<%= song.release_year %>">	
+		</label>
+		
+		<label for="song_spotify_url">
+			Spotify URL
+			<input type="text" name="song_spotify_url" id="song_spotify_url" value="<%= song.spotify_url %>">	
+		</label>
+
+		<input type="hidden" name="song_likes" value="<%= song.likes %>">
+		<input type="hidden" name="song_id" value="<%= song.id %>">
+
+		<input type="submit" value="Save">
+		
+	</form>	
+	<p><a href="/songs">Back to songs</a></p>
+</section>
